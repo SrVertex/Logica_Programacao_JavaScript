@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+    function skipLine() {
+
+        document.write("<br>");
+    }
+
+    function textBase(frase) {
+        document.write(frase);
+        skipLine();
+    }
+
+
+    var ganhos = parseInt(prompt("Entre Com o Numero de Partidas Ganhas."));
+    var empates = parseInt(prompt("Entre Com o Numero de Empates."));
+    var derrotas = parseInt(prompt("Entre Com o Numero de Derrotas."));
+
+    var pontos = ganhos * 3 + empates - derrotas * 3;
+
+    textBase("Os pontos do Seu time sao " + pontos);
+
+    if (pontos > 28){textBase("Seu Time esta Melhor que o ano Passado");}
+
+    if (pontos < 28){textBase("Seu Time esta Pior que o ano Passado");}
+    
+    if (pontos == 28){textBase("Seu Time esta igual que o ano Passado");}
+
+    textBase("Este foi o seu desempenho.")
+
+</script>

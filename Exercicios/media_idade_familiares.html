@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programinhas</title>
+    </head>
+    <body>
+
+
+<script>
+
+    function skipLine() {document.write("<br>");}
+
+    function textBase(frase) {document.write(frase); skipLine();}
+
+    var totalFamiliares = parseInt(prompt("Quantidade De Familiares?"));
+    var numero = 1;
+    var totalIdades = 0;
+
+    while (numero <= totalFamiliares) {
+        var idade = parseInt(prompt("Informe a Idade deste Familiar."));
+        totalIdades = totalIdades + idade;
+        numero++
+    }
+
+    var mediaIdades = totalIdades/totalFamiliares;
+    textBase("A Media das Idades é " + mediaIdades);
+
+
+</script>
+    </body>
+</html>

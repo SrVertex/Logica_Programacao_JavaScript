@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programinhas</title>
+    </head>
+    <body>
+
+
+<script>
+    function puloLinha() {document.write("<br>")}
+    function puloLinhaCabecalho() {document.write("<br><br>")}
+
+    function mostra(textoss) {document.write(textoss);}
+    function mostraPula(textoss) {document.write(textoss); puloLinha();}
+
+    function calculaImc(altura, peso) {
+        return peso / (altura * altura)
+        ;}
+
+var nome = prompt("Informe o seu nome");
+var alturaInformada = prompt(nome + ", informe sua Altura");
+var pesoInformado = prompt (nome + ", informe Seu Peso");
+var imc = calculaImc (alturaInformada, pesoInformado);
+
+        mostraPula("O IMC calculado de " + nome + " é de " + imc);
+
+</script>
+    </body>
+</html>
